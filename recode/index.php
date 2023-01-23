@@ -81,7 +81,7 @@ if ($row) {
 
 </form>
 
-<!-- ===== form section starts ===== -->
+<!-- ===== form section ends ===== -->
 
 </div>
 
