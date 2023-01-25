@@ -28,7 +28,7 @@ $("#sku").on('keyup', function () {
 
       else if (sku == "" || sku <= 0) {
 
-        // show an available message if the sku id already does not exists
+        // show an error message if the sku ID is not filled
 
         $('#error-message').html('<p style = "color:red">Please enter sku Id</p>');
         $("#save").attr("disabled", true);
@@ -36,6 +36,8 @@ $("#sku").on('keyup', function () {
       }
 
       else {
+       
+       // show an message if the sku Id is available in the database.
 
         $('#error-message').html('<p style = "color:green">SKU ID is available</p>');
         $("#save").attr("disabled", false);
