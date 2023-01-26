@@ -9,7 +9,7 @@ $("#sku").on('keyup', function () {
   var sku = $("#sku").val();
 
   $.ajax({
-    url: 'skuExists.php',
+    url: 'post.process.php',
     type: "POST",
     data: { sku: sku },
     success: function (data) {
