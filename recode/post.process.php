@@ -6,6 +6,16 @@ include 'includes/autoload.inc.php';
 
 $post = new DbPost();
 
+// checking whether the SKU ID already exists or not
+
+$skuExists = $post->skuCheck($_POST['sku']);
+
+if ($skuExists) {
+    echo 'exists';
+} else {
+    echo "doesn't exists";
+}
+
 // deleting data based on different product types
 
 if (isset($_POST['product_delete'])) {
